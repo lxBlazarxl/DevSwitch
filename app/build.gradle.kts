@@ -90,6 +90,10 @@ android {
         // The Shizuku user service is defined with AIDL (src/main/aidl).
         aidl = true
     }
+
+    androidResources {
+        generateLocaleConfig = true
+    }
 }
 
 dependencies {
