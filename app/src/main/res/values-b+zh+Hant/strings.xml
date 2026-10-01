@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DevSwitch</string>
+
+    <string name="tab_switches">開關</string>
+    <string name="tab_wireless">無線</string>
+
+    <string name="developer_options">開發人員選項</string>
+    <string name="developer_options_hint">在「設定」中顯示或隱藏「開發人員選項」。將其關閉時也會同時關閉兩項偵錯開關，與系統設定行為一致。</string>
+    <string name="usb_debugging">USB 偵錯</string>
+    <string name="usb_debugging_hint">允許透過 USB 連接的電腦使用 ADB。新電腦仍需在此手機上取得授權。</string>
+    <string name="wireless_debugging">無線偵錯</string>
+    <string name="wireless_debugging_hint">透過 Wi-Fi 使用 ADB（仍需進行配對）。需要有效的 Wi-Fi 連線；Wi-Fi 中斷時 Android 會自動將其關閉。</string>
+    <string name="wireless_debugging_unsupported">需要 Android 11 或更新版本。</string>
+
+    <string name="ready_title">已就緒</string>
+    <string name="ready_body">已取得 WRITE_SECURE_SETTINGS 權限。下方的開關將立即生效，且快速設定編輯器中已提供三個快速設定圖塊。</string>
+
+    <string name="setup_title">需要進行一次性設定</string>
+    <string name="setup_body">Android 僅允許擁有 WRITE_SECURE_SETTINGS 權限的應用程式變更這些設定，且該權限無法透過對話框授予。請透過以下任一方式授權一次，重新開機與應用程式更新後依然有效。</string>
+    <string name="setup_adb_step">在已安裝 ADB 的電腦上（此步驟需開啟 USB 偵錯）：</string>
+    <string name="copy_command">複製指令</string>
+    <string name="setup_shizuku_step">或在此手機上執行（無需電腦）：</string>
+    <string name="shizuku_get">取得 Shizuku</string>
+    <string name="shizuku_start">啟動 Shizuku</string>
+    <string name="shizuku_allow">允許 Shizuku 存取</string>
+    <string name="shizuku_grant">透過 Shizuku 授權</string>
+    <string name="root_grant">透過 Root 授權</string>
+
+    <string name="tile_developer_options">開發人員選項</string>
+    <string name="tile_usb_debugging">USB 偵錯</string>
+    <string name="tile_wireless_debugging">無線偵錯</string>
+    <string name="tile_on">開啟</string>
+    <string name="tile_off">關閉</string>
+    <string name="tile_needs_setup">輕觸以進行設定</string>
+    <string name="tile_unsupported">不可用</string>
+
+    <string name="confirm_off_title">要關閉 %1$s 嗎？</string>
+    <string name="confirm_off_developer">這也會同時關閉 USB 偵錯與無線偵錯。透過這兩者連線的任何電腦都將中斷連線。</string>
+    <string name="confirm_off_usb">透過 USB 連線的電腦將會中斷連線。</string>
+    <string name="confirm_off_wireless">透過 Wi-Fi 連線的電腦將會中斷連線。若這是您目前正在使用的連線，該連線亦會中斷。</string>
+    <string name="confirm_turn_off">關閉</string>
+    <string name="cancel">取消</string>
+
+    <!-- Wireless tab: this device -->
+    <string name="wireless_this_device">本裝置</string>
+    <string name="wireless_no_wifi">未連線至 Wi-Fi。無線偵錯需要網路連線。</string>
+    <string name="wireless_ip">IP 位址</string>
+    <string name="wireless_unknown">未知</string>
+    <string name="wireless_off_hint">無線偵錯已關閉，或尚未廣播其位址。請從「開關」分頁開啟。</string>
+    <string name="wireless_pairing_port">配對連接埠</string>
+    <string name="service_pairing">配對中</string>
+
+    <!-- Wireless tab: pairing card -->
+    <string name="pair_title">配對電腦</string>
+    <string name="pair_shizuku_permission">Shizuku 正在執行中。允許 DevSwitch 使用它，即可在此使用配對與已配對電腦清單功能。</string>
+    <string name="pair_grant_shizuku">授予 Shizuku 存取權限</string>
+    <string name="pair_shizuku_not_running">已安裝 Shizuku 但尚未啟動。請啟動 Shizuku，然後重新開啟此分頁。</string>
+    <string name="pair_open_shizuku">開啟 Shizuku</string>
+    <string name="pair_android_settings">Android 設定</string>
+    <string name="pair_needs_shizuku">產生配對碼需要 Shell 身份權限，DevSwitch 會透過 Shizuku 取得該權限（與其自我授權的方式相同）。請在「開關」分頁設定 Shizuku，或直接從 Android 系統設定頁面進行配對。</string>
+    <string name="pair_open_dev_options">開啟開發人員選項</string>
+    <string name="pair_intro">透過 Wi-Fi 配對電腦。可顯示配對碼以輸入至 adb pair，或掃描 Android Studio 顯示的 QR 圖碼。</string>
+    <string name="pair_with_code">使用配對碼配對</string>
+    <string name="pair_scan_studio_qr">掃描 Studio QR 圖碼</string>
+    <string name="pair_paired_computers">已配對的電腦</string>
+    <string name="pair_unpair">取消配對</string>
+    <string name="pair_unpair_title">要取消配對 %1$s 嗎？</string>
+    <string name="pair_unpair_body">若這是您目前連線的電腦，該連線將會中斷且必須重新配對。</string>
+    <string name="pair_scanned_finishing">已掃描 Android Studio 的代碼。正在本裝置上完成配對。</string>
+    <string name="pair_code_instructions">在電腦上執行此指令並輸入代碼。在 Android Studio 中，請選擇「Pair using pairing code」，選取本裝置並輸入代碼。</string>
+    <string name="pair_adb_pair_cmd">adb pair %1$s</string>
+    <string name="pair_port_placeholder">&lt;此處顯示配對連接埠&gt;</string>
+    <string name="pair_code_label">配對碼</string>
+    <string name="pair_waiting_studio">正在等待 Android Studio…</string>
+    <string name="pair_waiting_computer">正在等待電腦配對…</string>
+    <string name="pair_stop">停止</string>
+    <string name="pair_state_connected">已連線</string>
+    <string name="pair_state_paired">已配對</string>
+
+    <!-- Wireless tab: network list -->
+    <string name="network_title">此網路上的裝置</string>
+    <string name="network_none">未找到其他 ADB 裝置。當裝置開啟無線偵錯且連線至此 Wi-Fi 時，將會顯示於此處。</string>
+    <string name="network_resolving">解析中…</string>
+
+    <!-- QR scanner -->
+    <string name="scanner_instruction">在 Android Studio 中開啟「Pair using QR code」，然後將鏡頭對準 QR 圖碼。</string>
+    <string name="scanner_wrong_qr">這不是 Android 配對 QR 圖碼。請尋找 Android Studio 顯示的 QR 圖碼。</string>
+
+    <!-- Pairing messages, resolved on screen from the view model -->
+    <string name="msg_camera_permission">掃描 QR 圖碼需要相機權限。</string>
+    <string name="msg_lost_shizuku">與 Shizuku 失去連線，配對已停止。</string>
+    <string name="msg_paired_with">已與 %1$s 配對</string>
+    <string name="msg_pairing_finished">配對完成。</string>
+    <string name="msg_pairing_timeout">配對逾時。請重新開始以重試。</string>
+    <string name="pair_error_timeout">無法開始配對。Shizuku 回應逾時。</string>
+    <string name="pair_error_no_response">無法開始配對。Shizuku 服務未回應。請確認 Shizuku 是否仍在執行？</string>
+    <string name="pair_error_unavailable">無法開始配對。此裝置上的 ADB 服務無法存取。</string>
+    <string name="pair_error_not_permitted">無法開始配對。權限不足。請檢查是否仍允許 Shizuku 存取。</string>
+    <string name="pair_error_generic">無法開始配對。詳細資訊請參閱記錄。</string>
+</resources>
