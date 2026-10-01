@@ -10,7 +10,7 @@ Android 仅允许拥有 WRITE_SECURE_SETTINGS 权限的应用程序变更这些�
 
 无线标签页
 
-显示本设备的 IP 地址与实时无线调试地址，以及搜索同个 Wi-Fi 下的 ADB 设备。在 Shizuku 运行时，它还会列出已配对的电脑并能配对新电脑——无论是显示配对码以供 adb pair 使用，还是扫描 Android Studio 显示的二维码。
+显示本设备的 IP 地址与实时无线调试地址，以及搜索同个 Wi-Fi 下的 ADB 设备。在 Shizuku 运行时，它还会列出已配对的电脑并能配对新电脑，无论是显示配对码以供 adb pair 使用，还是扫描 Android Studio 显示的二维码。
 
 安全性
 
