@@ -10,7 +10,7 @@ Android 僅允許擁有 WRITE_SECURE_SETTINGS 權限的應用程式變更這些�
 
 無線分頁
 
-顯示本裝置的 IP 位址與即時無線偵錯位址，以及搜尋同個 Wi-Fi 下的 ADB 裝置。在 Shizuku 執行時，它還會列出已配對的電腦並能配對新電腦——無論是顯示配對碼以供 adb pair 使用，還是掃描 Android Studio 顯示的 QR 圖碼。
+顯示本裝置的 IP 位址與即時無線偵錯位址，以及搜尋同個 Wi-Fi 下的 ADB 裝置。在 Shizuku 執行時，它還會列出已配對的電腦並能配對新電腦，無論是顯示配對碼以供 adb pair 使用，還是掃描 Android Studio 顯示的 QR 圖碼。
 
 安全性
 
